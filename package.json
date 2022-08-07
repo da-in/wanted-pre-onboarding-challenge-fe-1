@@ -8,7 +8,7 @@
     "build": "tsc",
     "server": "nodemon --ignore db/ --watch '*.ts' --exec node --experimental-modules --es-module-specifier-resolution=node --loader ts-node/esm index.ts",
     "client": "cd client && yarn start",
-    "start": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\" \"ts-node ./server/server.ts\""
+    "start": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
   },
   "keywords": [],
   "author": "",
